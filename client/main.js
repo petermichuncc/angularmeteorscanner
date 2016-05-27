@@ -23,6 +23,9 @@ angular.module("socially").config(['$stateProvider', '$urlRouterProvider',
                 url: "/state1",
                	templateUrl: "client/partials/state1.html"
             })
-            
+            .state('state2', {
+                url: "/state2",
+                templateUrl: "client/partials/state2.html"
+            })
     }
 ]);
