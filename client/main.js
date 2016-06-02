@@ -50,5 +50,11 @@ angular.module("socially").config(['$stateProvider', '$urlRouterProvider',
                 controller: "PartiesListCtrl"
 
             })
+            .state('state3', {
+                url: "/state3",
+                templateUrl: "client/partials/state3.html",
+                controller: "PartiesListCtrl"
+
+            })
     }
 ]);
