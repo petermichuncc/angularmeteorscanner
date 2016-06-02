@@ -11,13 +11,13 @@ angular.module('socially', [
 ])
 .controller('PartiesListCtrl', function($scope, $reactive) {
     'ngInject';
- $scope.$watch('inputVal', function(val) {
-        if (val) {
-            console.log(val);
-            Session.set("test",val)
-            console.log("this is the session var "+ Session.get("test"))
+  $scope.submit = function() {
+        if ($scope.text) {
+          
+          Session.set("test", this.text)
+          console.log("this is the session" + Session.get("test"))
         }
-    });
+      };
     $reactive(this).attach($scope);
  
     this.helpers({
