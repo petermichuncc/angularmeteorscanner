@@ -18,6 +18,11 @@ angular.module('socially', [
           console.log("this is the session" + Session.get("test"))
         }
       };
+      $scope.$watch('inputVal', function(val) {
+        if (val) {
+            console.log(val);
+        }
+    });
     $reactive(this).attach($scope);
  
     this.helpers({
@@ -26,6 +31,7 @@ angular.module('socially', [
       }
     });
   });
+
 
 
 
