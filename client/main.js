@@ -1,6 +1,6 @@
 //import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-
+import { Session } from 'meteor/session';
 import './main.html';
 
 import angular from 'angular';
@@ -9,12 +9,18 @@ import angularMeteor from 'angular-meteor';
 angular.module('socially', [
   angularMeteor,'ui.router'
 ])
-.controller('PartiesListCtrl', function($scope) {
+.controller('PartiesListCtrl', function($scope, $reactive) {
     'ngInject';
-
- $scope.title = "Home";
-
-    $scope.helpers({
+ $scope.$watch('inputVal', function(val) {
+        if (val) {
+            console.log(val);
+            Session.set("test",val)
+            console.log("this is the session var "+ Session.get("test"))
+        }
+    });
+    $reactive(this).attach($scope);
+ 
+    this.helpers({
       parties() {
         return Parties.find({});
       }

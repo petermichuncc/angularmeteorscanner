@@ -1,1 +1,93 @@
 /* CSS declarations go here */
+
+.vertical
+{
+  
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+
+}
+.test
+{
+   font-size: 250%; 
+    
+}
+#repairlog_container{
+    position : absolute;    
+    width    : 700px;
+    height   : 300px;
+    left     : 50%;
+    top      : 50%;
+    margin-left : -350px; /* half of the width  */
+    margin-top  : -150px; /* half of the height */
+}
+#centered_box{
+    background: #90a4ae;
+    padding: 2%;
+    /*box-shadow: 5px 5px 15px #888888;*/
+    
+    font-size:125%
+}
+.mytext {
+    margin: auto;
+    width: 20vw;
+ 
+}
+#test
+{
+	color:black;
+}
+body {
+  height:100vh;
+    font-family: verdana,arial,sans-serif;
+    font-size: 125%;
+    
+    
+    font-weight: 300;
+    
+}
+.green
+{
+   background-color:green;
+}
+.thumbnail {
+    border: 0;
+}
+
+
+
+
+.form-control {
+    height: 32px;
+}
+
+.h4, h4 {
+    width: auto;
+    float: left;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.controls {
+    float: right;
+    display: inline-block;
+}
+
+.well {
+    position: relative;
+    display: inline-block;
+}
+
+.panel-heading {
+    display: inline-block;
+    width: 100%;
+}
+
+.container {
+    width: 100%
+}
+
