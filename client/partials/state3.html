@@ -1,12 +1,12 @@
 
- 
+
 <div id="repairlog_container" class="center" >
 <img src="logo.jpg " class="z-depth-3"><br><br>
             <div id="centered_box"  class="z-depth-5 center">
  <div class="center">
    
   
-        Please scan the job order: <br><input type="initials" name="initials" required class="form-control mytext"  id="initials" placeholder="UPC" autofocus ng-model="inputVal">
+        <span class="whitetext">Please scan the job order: </span><br><input type="initials" name="initials" required class="mytext"  id="initials" placeholder="UPC" autofocus ng-model="inputVal">
        </div>
       
 
@@ -16,3 +16,14 @@
 
 </div>
 
+
+<!--
+<div ng-controller="PartiesListCtrl as vm">
+  <ul>
+    <li ng-repeat="party in vm.parties">
+      {{party.name}}
+      <p>{{party.description}}</p>
+    </li>
+</ul>
+</div>
+-->

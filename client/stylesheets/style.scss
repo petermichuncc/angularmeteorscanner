@@ -13,6 +13,9 @@
    font-size: 250%; 
     
 }
+input, select, textarea{
+    color: black;
+}
 #repairlog_container{
     position : absolute;    
     width    : 700px;
@@ -26,7 +29,7 @@
     background: #90a4ae;
     padding: 2%;
     /*box-shadow: 5px 5px 15px #888888;*/
-    color: white;
+  
     /*font-size:100%*/
 }
 .mytext {
@@ -50,8 +53,6 @@ body {
 .thumbnail {
     border: 0;
 }
-
-
 
 
 .form-control {
@@ -85,4 +86,7 @@ body {
 .container {
     width: 100%
 }
-
+.whitetext
+{
+    color:white;
+}

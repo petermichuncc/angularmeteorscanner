@@ -27,13 +27,53 @@ angular.module('socially', [
  
     this.helpers({
       parties() {
-        return Parties.find({});
+        return Parties.find({name:"name2"});
+      },
+      orders(){
+        return Orders.find({})
       }
     });
   });
 
 
 
+/*
+upc1=Number(upc)
+      upc=upc.trim()
+      //I need to return the partnumber
+      
+        if (Orders.find({ordernumber:upc1}).count()>=1)
+      {
+        
+        if (typeof Orders.find({ordernumber:upc1}).fetch().pop().partnumber ==="string")
+        {
+        return Orders.find({ordernumber:upc1}).fetch().pop().partnumber
+      }
+      else if (typeof Orders.findOne({ordernumber:upc1}).partnumber ==="string")
+      {
+
+        return Orders.findOne({ordernumber:upc1}).partnumber
+      }
+        
+      }
+    else if (Orders.find({ordernumber:upc}).count()>=1)
+    { 
+            
+ if (typeof Orders.find({ordernumber:upc}).fetch().pop().partnumber ==="string")
+        {
+        return Orders.find({ordernumber:upc}).fetch().pop().partnumber
+      }
+      else if (typeof Orders.findOne({ordernumber:upc}).partnumber ==="string")
+      {
+
+        return Orders.findOne({ordernumber:upc}).partnumber
+      }
+      }  
+      else
+      {
+        return false
+      }
+      */
 
 
 
@@ -60,6 +100,7 @@ angular.module("socially").config(['$stateProvider', '$urlRouterProvider',
                 url: "/state3",
                 templateUrl: "client/partials/state3.html",
                 controller: "PartiesListCtrl"
+                
 
             })
     }
